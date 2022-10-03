@@ -31,11 +31,12 @@ void printList(int *p, int n){
 int main(){
 
     int n=50;
-    srand(time(0));
+    //srand(time(0));
+    freopen("input.txt","r",stdin);
     int *A = new int [n];
     for(int i=0;i<n;i++)
     {
-         A[i]=rand();
+        cin >> A[i];
          cout<<A[i]<<"\n";
      }
 
